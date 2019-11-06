@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Restaurants</h1>
+  <div class="row justify-content-center">
+  <% @restaurants.each do |r| %>
+    <div class="card col-3" style="width: 18rem;">
+        <h2><%= link_to "#{r.name}", restaurant_path(r) %></h2>
+        <p><%= r.address %></p>
+        <p><%= r.category.capitalize %></p>
+        <p><%= r.phone_number %></p>
+    </div>
+  <% end %>
+  </div>
+</div>

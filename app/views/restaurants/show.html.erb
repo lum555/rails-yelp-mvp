@@ -1,0 +1,17 @@
+<div class="container">
+  <h1><%= @restaurant.name %></h1>
+  <h2><%= @restaurant.category.capitalize %></h2>
+  <h2><%= @restaurant.address %></h2>
+  <h2><%= @restaurant.phone_number %></h2>
+
+  <button class="btn btn-success"><%= link_to "Add a review", new_restaurant_review_path(@restaurant) %></button>
+
+  <h2>Reviews</h2>
+  <% @restaurant.reviews.each do |r| %>
+  <h3><%= r.content %></h3>
+  <h3><%= r.rating %></h3>
+  <% end %>
+
+  <%= link_to "Return to index", restaurants_path, :class => "btn btn-primary" %>
+  <%= link_to "Edit", edit_restaurant_path(@restaurant), :class => "btn btn-warning" %>
+</div>

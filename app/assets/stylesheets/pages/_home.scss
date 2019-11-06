@@ -1,0 +1,45 @@
+// Specific CSS for your home-page
+nav {
+  background: #FAF3DD;
+}
+
+body {
+  background: #FAF3DD !important;
+}
+
+h1 {
+  font-weight: bolder !important;
+}
+
+.container {
+  background: #C8D5B9;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.card {
+  margin: 16px;
+  padding: 8px;
+  background: #FBFFFE;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-info {
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+.btn-warning a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-brand a {
+  color: black;
+  text-decoration: none;
+}

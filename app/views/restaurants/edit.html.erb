@@ -1,0 +1,13 @@
+<div class="container">
+<%= simple_form_for @restaurant do |f| %>
+  <%= f.input :name %>
+  <%= f.input :category, collection: %w[chinese italian japanese french belgian]%>
+  <%= f.input :address %>
+  <%= f.input :phone_number %>
+  <%= f.button :submit, "Submit", class: 'btn btn-warning' %>
+<% end %>
+<%= link_to "Return to index", restaurants_path, :class => "btn btn-primary" %>
+<%= link_to "Delete", restaurant_path, :class => "btn btn-default btn-danger",
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
+</div>
